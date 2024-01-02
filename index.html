@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>assignment 7</title>
+  </head>
+  <body>
+    <!-- ! <img src="./WhatsApp Image 2024-01-01 at 20.56.33_b38d7c23.jpg"> -->
+    <fieldset>
+      <form action="https://example.org/" method="post">
+        <legend><h1>Please Fill The Form</h1></legend>
+        <p>
+          Username
+          <input
+            type="text"
+            name="name"
+            maxlength="50"
+            placeholder="type your name"
+          />
+        </p>
+        <p>
+          Password
+          <input
+            type="password"
+            name="password"
+            maxlength="25"
+            placeholder="type your password"
+            required
+          />
+        </p>
+        <p>
+          Email
+          <input
+            type="email"
+            name="email"
+            maxlength="50"
+            placeholder="type your email"
+          />
+        </p>
+        <p>
+          Phone
+          <input
+            type="number"
+            name="phone"
+            maxlength="20"
+            placeholder="type your phone number"
+          />
+        </p>
+        <p>
+          Address
+          <input
+            type="text"
+            name="address"
+            maxlength="100"
+            placeholder="type your address"
+          />
+        </p>
+        <!--! GENDER -->
+        <h2>please select your gender</h2>
+        Gender:
+        <label for="female">Female</label>
+        <input id="female" type="radio" name="gender" value="f" />
+        <label for="male">Male</label>
+        <input id="male" type="radio" name="gender" value="m" />
+
+        <!--! RADIO -->
+        <h2>please select your minimum education</h2>
+
+        <label for="101">
+          <input
+            type="radio"
+            name="education"
+            value="Metric"
+            id="101"
+            checked
+          />Metric
+        </label>
+
+        <br />
+
+        <label for="102">
+          <input
+            type="radio"
+            name="education"
+            value="Intermediate"
+            id="102"
+          />Intermediate
+        </label>
+
+        <br />
+        <label for="103">
+          <input
+            type="radio"
+            name="education"
+            value="Undergraduate"
+            id="103"
+          />Undergraduate
+        </label>
+        <!-- !CHECKBOX -->
+        <h2>please select subjects</h2>
+
+        <input type="checkbox" name="subjects" value="English" checked />
+        English
+        <br />
+        <input type="checkbox" name="subjects" value="Math" /> Math
+        <br />
+        <input type="checkbox" name="subjects" value="Physics" /> Physics
+        <br />
+        <input type="checkbox" name="subjects" value="Chemistry" /> Chemistry
+        <br />
+        <input type="checkbox" name="subjects" value="Urdu" /> Urdu
+        <br />
+        <input type="checkbox" name="subjects" value="Islamiat" /> Islamiat
+
+        <!--! DROPDOWN -->
+        <h2>please select your city</h2>
+        <select name="city" size="2">
+          <option value="karachi" selected>karachi</option>
+          <option value="Quieta">Quieta</option>
+          <option value="Peshawar">Peshawar</option>
+          <option value="Islamabad">Islamabad</option>
+        </select>
+        <!-- !PIC UPLOAD -->
+        <h2>Please upload your picture</h2>
+        <input type="file" name="user-picture" />
+        <!--! DATE AND TIME -->
+        <h2>please select date and time</h2>
+
+        <!--! COMMENTS -->
+        <h2>what do you think about this form</h2>
+        <textarea name="comments" id="" cols="30" rows="10">
+		give feedback</textarea
+        >
+
+        <!--! br-->
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+        <input type="button" value="Cancel" />
+      </form>
+    </fieldset>
+  </body>
+</html>
